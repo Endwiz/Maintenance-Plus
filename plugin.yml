@@ -1,0 +1,9 @@
+main: fr.endwiz.maintenance.main
+version: 1.1.5
+name: Maintenance
+commands:
+  maintenance:
+    permission: maintenance.use
+    usage: /maintenance
+  
+  

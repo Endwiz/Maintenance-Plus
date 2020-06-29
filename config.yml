@@ -1,0 +1,85 @@
+######################
+######################
+#### MAINTENANCE #####
+####### PLUGIN #######
+######################
+######################
+
+############
+####INFO####
+############
+
+  # Pour soutenir gratuitement le createur aller sur https://utip.io/endwizzz
+  # La page pour télécharger les prochaines version du plugin https://www.spigotmc.org/resources/maintenance.76186/
+  # Pour tout probleme contacter Endwiz#6489 sur discord
+  # Ceci est une version d'essaye elle est peut donc contenir des bug
+
+############
+##COMMANDS##
+############
+  # /maintenance on                            Activer le mode maintenance
+  # /maintenance off                           Désactiver le mode maintenance
+  # /maintenance delay <dalay> time <time>     Permet de mettre un delay avant la maintenance et un temps de maintenance
+  # /maintenance delay <delay>                 Permet de mettre un delay avant la maintenance
+  # /maintenance time <time>                   Permet de mettre un temps de maintenance
+  # /maintenance reload                        Reload la configuration
+  # /maintenance statut                        Permet de voir si le serveur est en maintenance ou pas
+  # /maintenance list                          Permet de voir la liste des joueurs dans  la whitelist de maintenance
+  # /maintenance add <pseudo>                  Ajouter un joueur a la joueur a la whitelist de maintenance
+  # /maintenance remove <pseudo>               Supprimer un joueur a la whitelist de maintenance
+
+############
+##Settings##
+############
+message:
+  # Message d'activation de maintenance
+  maintenance_enable: "&9Le mode maintenance est &4activer &9!"
+  
+  # Message de desactivation de maintenance
+  maintenance_disable: "&9Le mode maintenance est &4desactiver &9!"
+  
+  # Message lorsqu'un joueur se connecte au serveur lors d'une maintenance
+  maintenance_connect_message: "&aLe serveur est actuellement en maintenance revenez plus tard!"
+  
+  # Message lorsqu'un joueur est kick du serveur grace a une maintenance
+  maintenance_kick_message: "&4Le serveur entre en mode maintenance!"
+  
+  # Message lorsque la maintenance est deja desactiver
+  erreur_maintenance_off: "&cLe mode maintenance est deja desactiver"
+  
+  # Message lorsque la maintenance est deja activer
+  erreur_maintenance_on: "&cLe mode maintenance est deja activer"
+  
+  # Brodcast lorsqu'une maintenance commence
+  maintenance_brodcast_start: "&cLa maintenance commence"
+
+  # Brodcast lorsqu'une maintenance prend fin
+  maintenance_brodcast_end: "&cFin de la maintenance"
+  
+  # Message lorsqu'un joueur ajoute au joueur a la whitelist
+  player_add_message: "&aLe joueur &4{player}&a a bien ete ajouter a la whitelist"
+
+  # Message lorsqu'un joueur enleve un joueur a la whitelist
+  player_remove_message: "&aLe joueur &4{player}&a a bien ete supprimer de la whitelist"
+  
+  # Message lorsque un joueur n'est pas ajouter a la whitelist
+  failed_add_list: "&cLe joueur &a{player} &c n'as pas ete ajouter de la list"
+
+  # Message lorsque un joueur n'est pas supprimer de la whitelist
+  failed_remove_list: "&cLe joueur &a{player} &c n'as pas ete retirer de la list"
+
+  # Message lorsque l'etat de la maintenance n'est pas sauvgarder
+  failed_maintenance_state: "&cL'etat de la maintenance n'a pas pu etre sauvgarder"
+
+  # Message lorsque une maintenance est prevue
+  delayed_message_maintenance: "&cLa maintenance commence dans {delay} secondes!"
+
+  # Message de relaod
+  reload_message: "&aConfiguration reload"
+  
+  statut:
+    # Message lorsqu'un joueur fait /maintenance statut et que le serveur est en maintenance
+    maintenance_on: "&9La maintenance est active"
+    
+    # Message lorsqu'un joueur fait /maintenance statut et que le serveur n'est pas en maintenance
+    maintenance_off: "&9La maintenance est desactiver"
